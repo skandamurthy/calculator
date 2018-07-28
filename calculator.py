@@ -22,11 +22,17 @@ class calculator():
 
 a=int(input("Enter First number:"))
 b =int(input("Enter Second number:"))
+function = input("Math Fuction:")
 obj1 = calculator("calculator1")
-print(obj1.add(a,b))
-print(obj1.subtract(a,b))
-print(obj1.multiply(a,b))
-print(obj1.divide(a,b))
-
+if function =="+":
+    print(obj1.add(a,b))
+elif function =='-':
+    print(obj1.subtract(a,b))
+elif function =='*':
+    print(obj1.multiply(a,b))
+elif function =='/':
+    print(obj1.divide(a,b))
+else:
+    print("Invalid Function")
 
 
